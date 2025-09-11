@@ -1,6 +1,6 @@
 :root {
     --background-color: #1E1E1E;
-    --border-color: #E1CEAB;
+    --accent-color: #E1CEAB;
     --secundary-color: #ADADAD;
 }
 
@@ -27,4 +27,76 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 0;
     opacity: 0.9;
+}
+
+header .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-bar .logo-img {
+    max-width: 142px;
+    margin-left: 32px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.nav-list>a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s;
+}
+
+.nav-list>a:hover {
+    animation: translateY 0.8s forwards;
+    color: var(--accent-color);
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-2px) scale(1.1);
+    }
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 42px;
+    margin-right: 32px;
+}
+
+.instagram {
+    font-size: 43px;
+    color: var(--accent-color);
+}
+
+.instagram:hover {
+    animation: translateY 0.8s forwards;
+}
+
+.schedule-container .schedule button {
+    padding: 16px 24px;
+    font-size: 1em;
+    background-color: var(--accent-color);
+    color: #000000;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.schedule-container .schedule button:hover {
+    animation: translateY 0.8s forwards;
 }
