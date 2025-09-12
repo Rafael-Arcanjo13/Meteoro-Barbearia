@@ -134,11 +134,23 @@ header .nav-bar .logo-img {
         transition: .4s;
     }
 
-    .nav-itens .nav-item {
+    .nav-bar .nav-list .nav-itens {
         display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 10;
     }
 
     .schedule-container {
         display: none;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .nav-bar .nav-list .nav-itens {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 0;
     }
 }
