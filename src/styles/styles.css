@@ -83,6 +83,9 @@ header .nav-bar .logo-img {
 
 .instagram {
     font-size: 43px;
+}
+
+.instagram>a {
     color: var(--accent-color);
 }
 
