@@ -2,6 +2,7 @@
     --background-color: #1E1E1E;
     --accent-color: #E1CEAB;
     --secundary-color: #ADADAD;
+    --text-color: #E0E0E0;
 }
 
 body {
@@ -63,13 +64,17 @@ header .nav-bar .logo-img {
 }
 
 .nav-itens .nav-item>a {
-    color: #FFFFFF;
+    color: var(--text-color);
     text-decoration: none;
     text-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.5s;
 }
 
 .nav-itens .nav-item>a:hover {
+    color: var(--accent-color);
+}
+
+.nav-item a>i {
     color: var(--accent-color);
 }
 
@@ -144,12 +149,31 @@ header .nav-bar .logo-img {
         gap: 10;
     }
 
+    .nav-item a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: .25rem;
+    }
+
+    .nav-item a>i {
+        font-size: 1.25rem;
+    }
+
+    .nav-name {
+        font-size: .75rem;
+    }
+
     .schedule-container {
         display: none;
     }
 }
 
 @media screen and (max-width: 475px) {
+    .bg-home::before {
+        background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), var(--background-color)), url('../assets/image/img-fundo-celular.png');
+    }
+
     .nav-bar .nav-list .nav-itens {
         display: flex;
         justify-content: space-around;
