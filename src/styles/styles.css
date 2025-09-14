@@ -12,6 +12,10 @@ body {
 
 .bg-home {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    height: 962px;
 }
 
 .bg-home::before {
@@ -200,7 +204,7 @@ div.hero-info {
     text-align: center;
     gap: 42px;
     width: 100%;
-    max-width: 782px;
+    max-width: 532px;
 }
 
 .hero-title {
@@ -219,4 +223,55 @@ div.hero-info {
     font-size: 2.5rem;
     font-weight: 100;
     text-transform: uppercase;
+}
+
+.hero-subtitle {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 3.5em;
+    font-weight: 600;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.71);
+    width: 100%;
+}
+
+.hero-schedule a > button {
+    background: none;
+    border: solid 2px var(--accent-color);
+    outline: solid 2px var(--accent-color);
+    outline-offset: 2px;
+    padding: .6rem 2.2rem;
+    color: var(--text-color);
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.71);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.hero-schedule a > button:hover {
+    background-color: var(--accent-color);
+    color: #000000;
+    animation: translateY 0.6s forwards;
+}
+
+@media screen and (max-width: 475px) {
+    .bg-home {
+        align-items: center;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 432px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-title span {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.5rem;
+    }
 }
