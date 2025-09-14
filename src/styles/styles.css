@@ -176,6 +176,10 @@ header .nav-bar .logo-img {
 }
 
 @media screen and (max-width: 475px) {
+    .bg-home {
+        height: 740px;
+    }
+
     .bg-home::before {
         background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), var(--background-color)), url('../assets/image/img-fundo-celular.png');
     }
