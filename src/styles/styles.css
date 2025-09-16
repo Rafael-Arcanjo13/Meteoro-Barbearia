@@ -279,3 +279,59 @@ div.hero-info {
         font-size: 2.5rem;
     }
 }
+
+/* ------------------ INFO SECTION ------------------ */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.informations-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 248px;
+    width: 100%;
+}
+
+.info-logo {
+    font-size: 43px;
+    color: var(--accent-color);
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+}
+
+.information-main {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.info-name {
+    color: var(--secundary-color);
+    font-size: 14px;
+    text-align: center;
+}
