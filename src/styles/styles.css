@@ -92,15 +92,15 @@ header .nav-bar .logo-img {
     margin-right: 32px;
 }
 
-.instagram {
+.nav-instagram {
     font-size: 43px;
 }
 
-.instagram>a {
+.nav-instagram>a {
     color: var(--accent-color);
 }
 
-.instagram:hover {
+.nav-instagram:hover {
     animation: translateY 0.8s forwards;
 }
 
