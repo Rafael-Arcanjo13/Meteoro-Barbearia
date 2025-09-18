@@ -503,3 +503,122 @@ div.hero-info {
           height: 70%;
     }
 }
+
+/* ------------------ ASSESSMENT SECTION ------------------ */
+
+.assessment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assessment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 67px;
+    gap: 148px;
+}
+
+.assessment-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.line-small {
+    width: 96px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.line-big {
+    width: 128px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.assessment-title {
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid var(--accent-color);
+    padding: .6rem 2.2rem;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.71);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.assessment-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+.assessment-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.assessment-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--accent-color);
+    outline: solid 2px var(--accent-color);
+    outline-offset: 2px;
+    border-radius: 2px;
+    padding: 1rem;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.71);
+    max-width: 345px;
+    width: 100%;
+    height: 323px;
+    gap: 27px;
+}
+
+.assessment-text {
+    color: var(--secundary-color);
+    text-align: center;
+}
+
+.assessment-stars-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.assessment-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-color);
+}
+
+.assessment-stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.stars-container {
+    color: var(--accent-color);
+}
+
+.assessment-stars p {
+    color: var(--text-color);
+}
