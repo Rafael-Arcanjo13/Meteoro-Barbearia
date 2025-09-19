@@ -8,6 +8,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 .bg-home {
@@ -565,7 +566,7 @@ div.hero-info {
 .assessment-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 100px;
@@ -621,4 +622,82 @@ div.hero-info {
 
 .assessment-stars p {
     color: var(--text-color);
+}
+
+/* ------------------ SLIDE SECTION ------------------ */
+
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 1rem;
+}
+
+.slider {
+    overflow-x: hidden;
+    width: 360px;
+    border-radius: 6px;
+    scroll-behavior: smooth;
+}
+
+.slider-content {
+    display: flex;
+    width: fit-content;
+}
+
+.slider-content img {
+    width: 360px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slide-container button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slide-container button:first-of-type {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.slide-container button:last-of-type {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.slide-container button:hover {
+    background-color: #d1c09f;
+}
+
+#previousSlide, #nextSlide {
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.71);
+}
+
+.length-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 200%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.dot.current {
+    background-color: var(--accent-color);
 }
