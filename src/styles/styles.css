@@ -133,9 +133,13 @@ header .nav-bar .logo-img {
 }
 
 @media screen and (max-width: 1130px) {
+    header .nav-bar {
+        padding: 0 1rem;
+    }
+
     header .nav-bar .logo-img {
         width: 100px;
-        margin-left: 1rem;
+        margin-left: 0;
     }
 
     .nav-list {
@@ -757,6 +761,7 @@ div.hero-info {
 
 .footer-text > p {
     color: var(--secundary-color);
+    text-align: center;
 }
 
 .footer-nav {
@@ -796,19 +801,10 @@ div.hero-info {
     max-width: 1440px;
 }
 
-.footer-instagram > a {
+.footer-instagram > a, .footer-whatsapp > a {
     display: flex;
     gap: 12px;
-    font-size: 24px;
-    color: var(--secundary-color);
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.footer-whatsapp > a {
-    display: flex;
-    gap: 12px;
-    font-size: 24px;
+    font-size: 1.5em;
     color: var(--secundary-color);
     text-transform: uppercase;
     text-decoration: none;
@@ -827,5 +823,11 @@ div.hero-info {
     .footer-down {
         justify-content: space-around;
         gap: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer-instagram > a, .footer-whatsapp > a {
+        font-size: 1em;
     }
 }
