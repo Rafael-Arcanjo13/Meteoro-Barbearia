@@ -19,7 +19,8 @@ function setCurrentDot() {
     dots[currentSlide].classList.add('current');
 }
 
-function controlSlide({ target: { id } }) {
+function controlSlide(event) {
+    const { id } = event.currentTarget;
     const slideWidth = slider.clientWidth;
 
     switch (id) {   
