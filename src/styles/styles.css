@@ -704,11 +704,16 @@ div.hero-info {
 
 @media screen and (max-width: 475px) {
     .slider {
-        width: 310px;
+        width: 230px;
     }
 
     .slider-content img {
-        width: 310px;
-        height: 550px;
+        width: 230px;
+        height: 470px;
+    }
+
+    .slide-container button {
+        width: 40px;
+        height: 40px;
     }
 }
