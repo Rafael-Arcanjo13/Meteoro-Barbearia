@@ -5,6 +5,10 @@
     --text-color: #E0E0E0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background-color);
@@ -717,3 +721,6 @@ div.hero-info {
         height: 40px;
     }
 }
+
+/* ------------------ FOOTER SECTION ------------------ */
+
