@@ -847,31 +847,3 @@ div.hero-info {
     transform: translateX(0);
     transition: all 1s;
 }
-
-.cards :nth-child(2) {
-    transition-delay: 100ms;
-}
-
-.cards :nth-child(3) {
-    transition-delay: 200ms;
-}
-
-.cards :nth-child(4) {
-    transition-delay: 300ms;
-}
-
-.cards :nth-child(5) {
-    transition-delay: 400ms;
-}
-
-.cards :nth-child(6) {
-    transition-delay: 500ms;
-}
-
-.assessment-cards :nth-child(2) {
-    transition-delay: 100ms;
-}
-
-.assessment-cards :nth-child(3) {
-    transition-delay: 200ms;
-}
